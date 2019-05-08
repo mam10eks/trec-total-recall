@@ -1,0 +1,18 @@
+{
+  "name": "recall-server",
+  "version": "1.0.0",
+  "dependencies": {
+    "busboy": {
+      "version": "0.3.1",
+      "from": "busboy@*",
+      "resolved": "https://registry.npmjs.org/busboy/-/busboy-0.3.1.tgz",
+      "dependencies": {
+        "dicer": {
+          "version": "0.2.0",
+          "from": "dicer@0.2.0",
+          "resolved": "https://registry.npmjs.org/dicer/-/dicer-0.2.0.tgz"
+        }
+      }
+    }
+  }
+}
