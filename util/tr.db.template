@@ -1,3 +1,7 @@
+-- Prefix to create and use total_recall_db in docker-container
+create database if not exists total_recall;
+use total_recall;
+
 -- MySQL dump 10.13  Distrib 5.6.19, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: total_recall
