@@ -10,7 +10,7 @@ var csv = require('csv')
 // in subsequent iterations.
 // In all likelihood, ElasticSearch will also be 
 // replaced with some other search engine
-var es = require('elasticsearch');
+/*var es = require('elasticsearch');
 var esclient = new es.Client({
   host: 'localhost:9200'
 });
@@ -49,7 +49,7 @@ router.get('/:corpid/:query/:docno', function(req, res, next){
     res.status(404).send("Search failed.")
     console.log(err);
   });
-});
+});*/
 router.get('/judge/:groupid/:corpid/:topid/:docid', function(req, res, next){
   var docid = req.params.docid;
   var topid = req.params.topid;
