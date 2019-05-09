@@ -24,7 +24,9 @@ if(cluster.isMaster){
   app.use(busboy())
   // TODO: Overall - ensure team validation occurs at all stages.
   var config = {
-    host : 'localhost',
+    host : 'mysql',
+    user : 'root',
+    password : 'secret',
     database : 'total_recall',
     connectionLimit : 20
   };

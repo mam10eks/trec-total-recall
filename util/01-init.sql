@@ -269,6 +269,7 @@ CREATE TABLE `teamids` (
   `runid` text,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `mode` text,
+  `type` text,
   `finalized` int(11) DEFAULT '0',
   `alias` text,
   `ip` text
@@ -343,3 +344,12 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2015-11-11 13:25:13
+
+-- Dummy-data to simplify the setup/bootstrapping:
+INSERT INTO `trec_groups` (
+  `groupid`,
+  `mode`
+)
+VALUES
+  ('group', 'trivial'),
+  ('test-group', 'trivial');
